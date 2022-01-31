@@ -4,7 +4,11 @@
 
 ### Abstract
 
-The goal here is to predict the probability that a driver will initiate a car insurance claim in the next year, using the relatively large Porto Seguro Kaggle Competition training dataset. Using ROC AUC value on validation data as the main selection criteria I evaluated the following models: logistic regression with balanced class weights, decision tree, random forest and XGBoost. Generally the predictive power of the models on this dataset was relatively poor. However, XGBoost was the clear winning model. I spent significant time attempting to manually tune the XGBoost model using the early stopping technique with high n_estimators. This had some success but not as much as I expected. I devised a profit function with assumed relevant figures, as a way of choosing a decision probability threshold to split the drivers into two groups for the purposes of profit maximisation via price discrimination.
+The goal here is to predict the probability that a driver will initiate a car insurance claim in the next year, using the relatively large Porto Seguro Kaggle Competition training dataset. Using ROC AUC value on validation data as the main selection criteria I evaluated the following models: logistic regression with balanced class weights, decision tree, random forest and XGBoost. Generally the predictive power of the models on this dataset was relatively poor. However, XGBoost was the clear winning model. I spent significant time attempting to manually tune the XGBoost model using the early stopping technique with high n_estimators. This had some success but not as much as I expected. I devised a profit function with assumed relevant figures, as a way of choosing a decision probability threshold to split the drivers into two groups for the purposes of profit maximisation via price discrimination. 
+
+### Recorded Presentation
+
+Please see project presentation [here](https://www.youtube.com/watch?v=ocSwE6_UJss).
 
 ### Data
 - Porto Seguro, a large Brazilian car insurance company, provided a relatively large, real commercial dataset to Kaggle as part of a competition a few years ago.
@@ -36,4 +40,4 @@ I found it a bit of a challenge to come up with a profit function that made sens
 
 
 ### Communication
-The methodology and results of this project have been communicated via this document, and via a recorded presentation and its slide-deck.
+The methodology and results of this project have been communicated via this document, and via a [recorded presentation](https://www.youtube.com/watch?v=ocSwE6_UJss) and its [slide-deck](https://github.com/billbell73/classification_project/blob/main/project_presentation.pdf).
